@@ -8,7 +8,7 @@ tags: authorization, apis, fastapi, madvirus
 
 ---
 
-API key authentication is important for securing APIs that handle sensitive data or perform critical operations. FastAPI is a popular Python web framework that makes it easy to implement API key authentication. In this article, we will show you how to generate an API key, hash it for secure storage, and save it in a database. By the end of this guide, you will be able to implement API key authentication in FastAPI to protect your API from unauthorized access.
+API key authentication is important for securing APIs that handle sensitive data or perform critical operations. FastAPI is a popular Python web framework that makes it easy to implement API key authentication. In this article, I will show you how to generate an API key, hash it for secure storage, and save it in a database. By the end of this guide, you will be able to implement API key authentication in FastAPI to protect your API from unauthorized access.
 
 ### **Installation of Required Modules**
 
