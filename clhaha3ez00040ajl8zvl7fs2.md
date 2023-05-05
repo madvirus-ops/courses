@@ -3,6 +3,7 @@ title: "Securing Your FastAPI with API Key Authentication: A Step-by-Step Guide"
 datePublished: Fri May 05 2023 11:33:51 GMT+0000 (Coordinated Universal Time)
 cuid: clhaha3ez00040ajl8zvl7fs2
 slug: securing-your-fastapi-with-api-key-authentication-a-step-by-step-guide
+cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/F7aZ8G7gGBQ/upload/b87d43aa313283b00c1225310a24d0f6.jpeg
 tags: authorization, apis, fastapi, madvirus
 
 ---
@@ -194,7 +195,7 @@ def verify_api_key(db:Session,token:str):
         return False
 ```
 
-## **Setting the Header with FastAPI**
+### **Setting the Header with FastAPI**
 
 ```python
 def api_key_header(authorization: str = Header(...)):
@@ -204,7 +205,7 @@ def api_key_header(authorization: str = Header(...)):
     return token
 ```
 
-## **Example Use Case**
+### **Example Use Case**
 
 API key authentication with FastAPI can help restrict access to certain resources or functionality based on the user or application making the request. By generating and requiring an API key, you can ensure that only authorized users or applications can access certain parts of your application.
 
@@ -226,6 +227,6 @@ async def get_cureent_user(authorization:str = Depends(api_key_header),db:Sessio
     raise HTTPException(status_code=401, detail="Not Authorized")
 ```
 
-### Conclusion
+### **Conclusion**
 
 In this article, we have seen how to implement API key authentication with FastAPI. By generating and requiring an API key, you can ensure that only authorized users or applications can access certain resources or functionality in your application. We have covered the steps involved in generating, saving, and verifying the API key using hashing and FastAPI's `Header` dependency.
